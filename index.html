@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            margin: auto;
+        }
+
+        .containerguns {
+            background-color: #a43de9;
+            position: relative;
+            border-radius: 20px;
+            display: inline-block;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            text-align: center;
+            width: 300px;
+            margin-left: 30px;
+            box-shadow: 1px 1px 1px 1px black;
+            text-shadow: 1px 1px 1px black;
+        }
+        .audioguns {
+            position: relative;
+            left: 30px;
+        }
+        .containerimg {
+            display: inline-flex;
+            transform: translateX(70px);
+        }
+        img {
+            position: relative;
+            top: 2px;
+            right: 3px;
+            border-radius: 10px;
+            width: 40px; 
+        }
+        .fundoimg {
+            margin: 2px 10px 2px 5px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px black;
+
+        }
+        section, label {
+            color: #a43de9;
+            box-shadow: 1px 1px 1px 1px black;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    
+   <main>
+       <div class="containerguns">
+            <h2>De quem é a musica?</h2>
+            <audio class="audioguns" preload="metadata"  controls>
+              <source src="guns.mpeg" type="audio/mpeg">
+            </audio>
+            
+            <div class="containerimg">
+                <section class="fundoimg">
+                    <label for="guns">Opção 1<br></label>
+                    <input type="checkbox" name="" id="guns">
+                    <img src="imagens/guns.png" alt="">
+                </section>
+                <section class="fundoimg">
+                    <label for="nirvana">Opção 2 <br></label>
+                    <input type="checkbox" name="" id="nirvana">
+                    <img src="imagens/nirvana.png" alt=""> 
+                </section>
+                <section class="fundoimg">
+                    <label for="pink">Opção 4 <br></label>
+                    <input type="checkbox" name="pink" id="pink">
+                    <img src="imagens/pink.png" alt="">
+                </section>
+            </div>
+        </div>
+
+        <div class="containerguns">
+            <h2>De quem é a musica?</h2>
+            <audio class="audioguns" preload="metadata"  controls>
+              <source src="guns.mpeg" type="audio/mpeg">
+            </audio>
+            
+            <div class="containerimg">
+                <section class="fundoimg">
+                    <label for="guns">Opção 1<br></label>
+                    <input type="checkbox" name="" id="guns">
+                    <img src="imagens/guns.png" alt="">
+                </section>
+                <section class="fundoimg">
+                    <label for="nirvana">Opção 2 <br></label>
+                    <input type="checkbox" name="" id="nirvana">
+                    <img src="imagens/nirvana.png" alt=""> 
+                </section>
+                <section class="fundoimg">
+                    <label for="pink">Opção 4 <br></label>
+                    <input type="checkbox" name="pink" id="pink">
+                    <img src="imagens/pink.png" alt="">
+                </section>
+            </div>
+        </div>
+   </main>
+    
+</body>
+</html>
