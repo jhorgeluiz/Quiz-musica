@@ -14,7 +14,7 @@
             position: relative;
             border-radius: 20px;
             display: inline-block;
-            height: 200px;
+            height: 240px;
             margin-bottom: 10px;
         }
         h2 {
@@ -27,7 +27,6 @@
 
         p {
             margin: 0px;
-            color: #a43de9;
         }
         .audios {
             position: relative;
@@ -43,9 +42,18 @@
             color: white;
             width: 100px;
             box-shadow: 1px 1px 1px 1px black;
-            text-shadow: 1px 1px 1px black;
+            text-shadow: 1px 1px 1px rgb(146, 130, 130);
             text-align: center;
             margin: 5px;
+        }
+
+        button {
+            background-color: #a43de9;
+            position: relative;
+            top: 5px;
+            left: 150px;
+            padding: 8px;
+            border-radius: 10px;
         }
        
     </style>
@@ -61,22 +69,23 @@
             
             <div class="containerdasection">
                 <section id="res1">
-                    <p>opção 1</p>
+                    <p>Opção 1</p>
                     <input type="checkbox" name="guns" id="guns" > <br>
                     <label for="guns">gunsN'rores</label>
                 </section>
                 <section id="res2">
-                    <p>opção 2</p>
+                    <p>Opção 2</p>
                     <input type="checkbox" name="nirvana" id="nirvana"> <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
                 <section id="res3">
-                    <p>opção 3</p>
+                    <p>Opção 3</p>
                     <input type="checkbox" name="pink" id="pink"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
-                <button onclick="verificar()"></button>
+                
             </div>
+            <button onclick="verificar()">Verificar</button>
         </div>
 
         <div class="containergeral">
@@ -87,21 +96,22 @@
             
             <div class="containerdasection">
                 <section>
-                    <p>opção 1</p>
+                    <p>Opção 1</p>
                     <input type="checkbox" name="" id="nirvana" > <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
                 <section>
-                    <p>opção 2</p>
+                    <p>Opção 2</p>
                     <input type="checkbox" name="pink" id="pink"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
                 <section>
-                    <p>opção 3</p>
+                    <p>Opção 3</p>
                     <input type="checkbox" name="" id="charlie"> <br>
                     <label for="charlie">charliebrowjr</label>
                 </section>
             </div>
+            <button onclick="verificar()">Verificar</button>
         </div>
 
         <div class="containergeral">
@@ -127,6 +137,7 @@
                     <label for="orapa">Orapa</label>
                 </section>
             </div>
+            <button onclick="verificar()">Verificar</button>
         </div>
         
    </main>
