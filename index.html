@@ -69,23 +69,23 @@
             
             <div class="containerdasection">
                 <section id="res1">
-                    <p>Opção 1</p>
+                    <p id="op1">Opção 1</p>
                     <input type="checkbox" name="guns" id="guns" > <br>
                     <label for="guns">gunsN'rores</label>
                 </section>
                 <section id="res2">
-                    <p>Opção 2</p>
+                    <p id="op2">Opção 2</p>
                     <input type="checkbox" name="nirvana" id="nirvana"> <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
                 <section id="res3">
-                    <p>Opção 3</p>
-                    <input type="checkbox" name="pink" id="pink"> <br>
+                    <p id="op3">Opção 3</p>
+                    <input type="checkbox" name="pink" id="pinkfloyd"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
                 
             </div>
-            <button onclick="verificar()">Verificar</button>
+            <button onclick="verificar1()">Verificar</button>
         </div>
 
         <div class="containergeral">
@@ -111,7 +111,7 @@
                     <label for="charlie">charliebrowjr</label>
                 </section>
             </div>
-            <button onclick="verificar()">Verificar</button>
+            <button onclick="verificar2()">Verificar</button>
         </div>
 
         <div class="containergeral">
@@ -137,34 +137,34 @@
                     <label for="orapa">Orapa</label>
                 </section>
             </div>
-            <button onclick="verificar()">Verificar</button>
+            <button onclick="verificar3()">Verificar</button>
         </div>
         
    </main>
     <script>
-        function verificar() {
-            let campo1 = document.getElementById('guns')
-            let campo2 = document.getElementById('nirvana')
-            let campo3 = document.getElementById('pink')
+        function verificar1() {
+            let guns = document.getElementById('guns')
+            let nirvana = document.getElementById('nirvana')
+            let pinkfloyd = document.getElementById('pinkfloyd')
             let res1 = document.getElementById('res1')
             let res2 = document.getElementById('res2')
             let res3 = document.getElementById('res3')
-
-            switch (verificar) {
-                case 1: {
-                    res1.style.background = 'red'
-                    break;
-                }
-                case 2: {
-                    res2.style.background = 'green'
-                    break;
-                }
-                case 3: {
-                    res3.style.background = 'gray'
-                    break;
-                }
-              
+            let op1 = document.getElementById('op1')
+            let op2 = document.getElementById('op2')
+            let op3 = document.getElementById('op3')
+            if (guns.checked) {
+                res1.style.background = 'green'
+                op1.innerHTML = 'Correto!'
             }
+            if (nirvana.checked) {
+                res2.style.background = 'red'
+                op2.innerHTML = 'Errado!'
+            }
+            if (pinkfloyd.checked) {
+                res3.style.background = 'red'
+                op3.innerHTML = 'Errado!'
+            }
+            
         }
     </script>
 </body>
