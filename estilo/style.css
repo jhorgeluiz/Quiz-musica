@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* ====================TELA PEQUENA==================== */
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    main {
+        margin: auto;
+    }
+
+    .containergeral {
+        background-color: #a43de9;
+        position: relative;
+        border-radius: 20px;
+        display: inline-block;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        text-align: center;
+        position: relative;
+        width: 300px;
+        left: 23px; 
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    p {
+        margin: 0px;
+    }
+    .audios {
+        position: relative;
+        left: 35px;
+    }
+    .containerdasection {
+        display: inline-flex;
+        position: relative;
+        left: 20px;
+    }
+
+    section {
+        color: white;
+        width: 100px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px rgb(146, 130, 130);
+        text-align: center;
+        margin: 5px;
+    }
+
+    button {
+        background-color: #a43de9;
+        position: relative;
+        top: 5px;
+        left: 150px;
+        padding: 8px;
+        box-shadow: 0.5px 0.5px 2px 0.5px black;
+        border-radius: 10px;
+        border-style: none;
+    }
+    button:active {
+        background-color: #a43de9;
+        border: 2px solid white;
+    }
+}
+
+/* ====================TELA MEDIA==================== */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+        margin: auto;
+    }
+
+    .containergeral {
+        background-color: #a43de9;
+        position: relative;
+        border-radius: 20px;
+        display: inline-block;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        text-align: center;
+        position: relative;
+        width: 300px;
+        left: 23px; 
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    p {
+        margin: 0px;
+    }
+    .audios {
+        position: relative;
+        left: 35px;
+    }
+    .containerdasection {
+        display: inline-flex;
+        position: relative;
+        left: 20px;
+    }
+
+    section {
+        color: white;
+        width: 100px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px rgb(146, 130, 130);
+        text-align: center;
+        margin: 5px;
+    }
+
+    button {
+        background-color: #a43de9;
+        position: relative;
+        top: 5px;
+        left: 150px;
+        padding: 8px;
+        box-shadow: 0.5px 0.5px 2px 0.5px black;
+        border-radius: 10px;
+        border-style: none;
+    }
+    button:active {
+        background-color: #a43de9;
+        border: 2px solid white;
+    }
+}
+
+/* ====================TELA GRANDE==================== */
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: rgb(136, 190, 190);
+    }
+    main {
+        position: absolute;
+        top: 85%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+    }
+
+    .containergeral {
+        
+        background-color: #a43de9;
+        position: relative;
+        border-radius: 20px;
+        height: 340px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        text-align: center;
+        position: relative;
+        top: 10px;
+        left: 5.6em; 
+        width: 300px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    h3 {  /* escolha */
+        margin: 0px;
+        position: relative;
+        left: 145px;
+    }
+
+    p {
+        
+        margin: 5px;
+    }
+    .audios {
+        position: relative;
+        top: 10px;
+        left: 8.5em;
+    }
+    input {
+        border: 0px;
+        width: 25%;
+        height: 2em;
+    }
+    .containerdasection {
+        display: inline-flex;
+        position: relative;
+        left: 20px;
+    }
+
+    section {
+        color: white;
+        position: relative;
+        top: 15px;
+        left: 33px;
+        width: 150px;
+        height: 100px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px black;
+        text-shadow: 1px 1px 1px rgb(146, 130, 130);
+        text-align: center;
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    button {
+        display: block;
+        background-color: #a43de9;
+        position: relative;
+        top: 25px;
+        left: 237px;
+        padding: 15px;
+        box-shadow: 0.5px 0.5px 2px 0.5px black;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 20px;
+    }
+    button:active {
+        background-color: #a43de9;
+        border: 2px solid white;
+    }
+}

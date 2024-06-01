@@ -3,95 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        main {
-            margin: auto;
-        }
-
-        .containergeral {
-            background-color: #a43de9;
-            position: relative;
-            border-radius: 20px;
-            display: inline-block;
-            height: 250px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            text-align: center;
-            position: relative;
-            width: 300px;
-            left: 23px; 
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px black;
-            text-shadow: 1px 1px 1px black;
-        }
-
-        p {
-            margin: 0px;
-        }
-        .audios {
-            position: relative;
-            left: 30px;
-        }
-        .containerdasection {
-            display: inline-flex;
-            position: relative;
-            left: 20px;
-        }
-
-        section {
-            color: white;
-            width: 100px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px black;
-            text-shadow: 1px 1px 1px rgb(146, 130, 130);
-            text-align: center;
-            margin: 5px;
-        }
-
-        button {
-            background-color: #a43de9;
-            position: relative;
-            top: 5px;
-            left: 150px;
-            padding: 8px;
-            box-shadow: 0.5px 0.5px 2px 0.5px black;
-            border-radius: 10px;
-            border-style: none;
-        }
-        button:active {
-            background-color: #a43de9;
-            border: 2px solid white;
-        }
-       
-    </style>
+    <title>Quiz Musical</title>
+    <link rel="stylesheet" href="estilo/style.css">
+   
 </head>
 <body>
     
    <main>
        <div class="containergeral">
             <h2>De quem é a musica?</h2>
+            <h3>Ouça a musica e escolha uma opção!</h3>
             <audio class="audios" preload="metadata"  controls>
               <source src="guns.mpeg" type="audio/mpeg">
             </audio>
             
             <div class="containerdasection">
+                
                 <section id="res1">
                     <p id="op1">Opção 1</p>
                     <input type="checkbox" name="guns" id="guns1" > <br>
-                    <label for="guns">gunsN'rores</label>
+                    <label for="guns1">gunsN'roses</label>
                 </section>
                 <section id="res2">
                     <p id="op2">Opção 2</p>
                     <input type="checkbox" name="nirvana" id="nirvana1"> <br>
-                    <label for="nirvana">Nirvana</label>
+                    <label for="nirvana1">Nirvana</label>
                 </section>
                 <section id="res3">
                     <p id="op3">Opção 3</p>
                     <input type="checkbox" name="pink" id="pinkfloyd1"> <br>
-                    <label for="pink">Pinkfloyd</label>
+                    <label for="pinkfloyd1">Pinkfloyd</label>
                 </section>
                 
             </div>
@@ -100,6 +41,7 @@
 
         <div class="containergeral">
             <h2>De quem é a musica?</h2>
+            <h3>Ouça a musica e escolha uma opção!</h3>
             <audio class="audios" preload="metadata"  controls>
               <source src="charlie.mpeg" type="audio/mpeg">
             </audio>
@@ -108,17 +50,17 @@
                 <section id="res2-1">
                     <p id="op2-1">Opção 1</p>
                     <input type="checkbox" name="nirvana2" id="nirvana2" > <br>
-                    <label for="nirvana">Nirvana</label>
+                    <label for="nirvana2">Nirvana</label>
                 </section>
                 <section id="res2-2">
                     <p id="op2-2">Opção 2</p>
                     <input type="checkbox" name="pink" id="pinkfloyd2"> <br>
-                    <label for="pink">Pinkfloyd</label>
+                    <label for="pinkfloyd2">Pink Floyd</label>
                 </section>
                 <section id="res2-3">
                     <p id="op2-3">Opção 3</p>
                     <input type="checkbox" name="charlie2" id="charlie2"> <br>
-                    <label for="charlie">charliebrowjr</label>
+                    <label for="charlie2">Charlie Brown</label>
                 </section>
             </div>
             <button onclick="verificar2()">Verificar</button>
@@ -126,105 +68,34 @@
 
         <div class="containergeral">
             <h2>De quem é a musica?</h2>
+            <h3>Ouça a musica e escolha uma opção!</h3>
             <audio class="audios" preload="metadata"  controls>
               <source src="anjos.mpeg" type="audio/mpeg">
             </audio>
             
+            <h>Escolha um opção!</h3>
             <div class="containerdasection">
                 <section id="res3-1">
                     <p id="op3-1">Opção 1</p>
                     <input type="checkbox" name="" id="nirvana3"> <br>
-                    <label for="nirvana">Nirvana</label>
+                    <label for="nirvana3">Nirvana</label>
                 </section>
                 <section id="res3-2">
                     <p id="op3-2">Opção 2</p>
                     <input type="checkbox" name="pink" id="pinkfloyd3"> <br>
-                    <label for="pink">Pinkfloyd</label>
+                    <label for="pinkfloyd3">Pink Floyd</label>
                 </section>
                 <section id="res3-3">
                     <p id="op3-3">Opção 3</p>
                     <input type="checkbox" name="" id="orapa3"> <br>
-                    <label for="orapa">Orapa</label>
+                    <label for="orapa3">O Rappa</label>
                 </section>
             </div>
             <button onclick="verificar3()">Verificar</button>
         </div>
         
-   </main>
-    <script>
-        function verificar1() {
-            let guns = document.getElementById('guns1')
-            let nirvana = document.getElementById('nirvana1')
-            let pinkfloyd = document.getElementById('pinkfloyd1')
-            let res1 = document.getElementById('res1')
-            let res2 = document.getElementById('res2')
-            let res3 = document.getElementById('res3')
-            let op1 = document.getElementById('op1')
-            let op2 = document.getElementById('op2')
-            let op3 = document.getElementById('op3')
-            if (guns.checked) {
-                res1.style.background = 'chartreuse'
-                op1.innerHTML = 'Correto!'
-            }
-            if (nirvana.checked) {
-                res2.style.background = 'red'
-                op2.innerHTML = 'Errado!'
-            }
-            if (pinkfloyd.checked) {
-                res3.style.background = 'red'
-                op3.innerHTML = 'Errado!'
-            }
-        }
-
-        function verificar2() {
-            let charlie2 = document.getElementById('charlie2')
-            let nirvana2 = document.getElementById('nirvana2')
-            let pinkfloyd2 = document.getElementById('pinkfloyd2')
-            let res2_1 = document.getElementById('res2-1')
-            let res2_2 = document.getElementById('res2-2')
-            let res2_3 = document.getElementById('res2-3')
-            let op2_1 = document.getElementById('op2-1')
-            let op2_2 = document.getElementById('op2-2')
-            let op2_3 = document.getElementById('op2-3')
-            if (nirvana2.checked) {
-                res2_1.style.background = 'red'
-                op2_1.innerHTML = 'Errado!'
-            }
-            if (pinkfloyd2.checked) {
-                res2_2.style.background = 'red'
-                op2_2.innerHTML = 'Errado!'
-            }
-            
-            if (charlie2.checked) {
-                res2_3.style.background = 'chartreuse'
-                op2_3.innerHTML = 'Correto!'
-            }
-        }
-
-        function verificar3() {
-            let orapa3 = document.getElementById('orapa3')
-            let nirvana3 = document.getElementById('nirvana3')
-            let pinkfloyd3 = document.getElementById('pinkfloyd3')
-            let res3_1 = document.getElementById('res3-1')
-            let res3_2 = document.getElementById('res3-2')
-            let res3_3 = document.getElementById('res3-3')
-            let op3_1 = document.getElementById('op3-1')
-            let op3_2 = document.getElementById('op3-2')
-            let op3_3 = document.getElementById('op3-3')
-            if (nirvana3.checked) {
-                res3_1.style.background = 'red'
-                op3_1.innerHTML = 'Errado!'
-            }
-            if (pinkfloyd3.checked) {
-                res3_2.style.background = 'red'
-                op3_2.innerHTML = 'Errado!'
-            }
-            
-            if (orapa3.checked) {
-                res3_3.style.background = 'chartreuse'
-                op3_3.innerHTML = 'Correto!'
-            }
-        }
-    </script>
+    </main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
