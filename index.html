@@ -14,13 +14,16 @@
             position: relative;
             border-radius: 20px;
             display: inline-block;
-            height: 240px;
+            height: 250px;
             margin-bottom: 10px;
         }
         h2 {
             text-align: center;
+            position: relative;
             width: 300px;
-            margin-left: 30px;
+            left: 23px; 
+            padding: 5px;
+            border-radius: 5px;
             box-shadow: 1px 1px 1px 1px black;
             text-shadow: 1px 1px 1px black;
         }
@@ -41,6 +44,7 @@
         section {
             color: white;
             width: 100px;
+            border-radius: 5px;
             box-shadow: 1px 1px 1px 1px black;
             text-shadow: 1px 1px 1px rgb(146, 130, 130);
             text-align: center;
@@ -53,7 +57,13 @@
             top: 5px;
             left: 150px;
             padding: 8px;
+            box-shadow: 0.5px 0.5px 2px 0.5px black;
             border-radius: 10px;
+            border-style: none;
+        }
+        button:active {
+            background-color: #a43de9;
+            border: 2px solid white;
         }
        
     </style>
@@ -70,17 +80,17 @@
             <div class="containerdasection">
                 <section id="res1">
                     <p id="op1">Opção 1</p>
-                    <input type="checkbox" name="guns" id="guns" > <br>
+                    <input type="checkbox" name="guns" id="guns1" > <br>
                     <label for="guns">gunsN'rores</label>
                 </section>
                 <section id="res2">
                     <p id="op2">Opção 2</p>
-                    <input type="checkbox" name="nirvana" id="nirvana"> <br>
+                    <input type="checkbox" name="nirvana" id="nirvana1"> <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
                 <section id="res3">
                     <p id="op3">Opção 3</p>
-                    <input type="checkbox" name="pink" id="pinkfloyd"> <br>
+                    <input type="checkbox" name="pink" id="pinkfloyd1"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
                 
@@ -95,19 +105,19 @@
             </audio>
             
             <div class="containerdasection">
-                <section>
-                    <p>Opção 1</p>
-                    <input type="checkbox" name="" id="nirvana" > <br>
+                <section id="res2-1">
+                    <p id="op2-1">Opção 1</p>
+                    <input type="checkbox" name="nirvana2" id="nirvana2" > <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
-                <section>
-                    <p>Opção 2</p>
-                    <input type="checkbox" name="pink" id="pink"> <br>
+                <section id="res2-2">
+                    <p id="op2-2">Opção 2</p>
+                    <input type="checkbox" name="pink" id="pinkfloyd2"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
-                <section>
-                    <p>Opção 3</p>
-                    <input type="checkbox" name="" id="charlie"> <br>
+                <section id="res2-3">
+                    <p id="op2-3">Opção 3</p>
+                    <input type="checkbox" name="charlie2" id="charlie2"> <br>
                     <label for="charlie">charliebrowjr</label>
                 </section>
             </div>
@@ -121,19 +131,19 @@
             </audio>
             
             <div class="containerdasection">
-                <section>
-                    <p>opção 1</p>
-                    <input type="checkbox" name="" id="nirvana"> <br>
+                <section id="res3-1">
+                    <p id="op3-1">Opção 1</p>
+                    <input type="checkbox" name="" id="nirvana3"> <br>
                     <label for="nirvana">Nirvana</label>
                 </section>
-                <section>
-                    <p>opção 2</p>
-                    <input type="checkbox" name="pink" id="pink"> <br>
+                <section id="res3-2">
+                    <p id="op3-2">Opção 2</p>
+                    <input type="checkbox" name="pink" id="pinkfloyd3"> <br>
                     <label for="pink">Pinkfloyd</label>
                 </section>
-                <section>
-                    <p>opção 3</p>
-                    <input type="checkbox" name="" id="orapa"> <br>
+                <section id="res3-3">
+                    <p id="op3-3">Opção 3</p>
+                    <input type="checkbox" name="" id="orapa3"> <br>
                     <label for="orapa">Orapa</label>
                 </section>
             </div>
@@ -143,9 +153,9 @@
    </main>
     <script>
         function verificar1() {
-            let guns = document.getElementById('guns')
-            let nirvana = document.getElementById('nirvana')
-            let pinkfloyd = document.getElementById('pinkfloyd')
+            let guns = document.getElementById('guns1')
+            let nirvana = document.getElementById('nirvana1')
+            let pinkfloyd = document.getElementById('pinkfloyd1')
             let res1 = document.getElementById('res1')
             let res2 = document.getElementById('res2')
             let res3 = document.getElementById('res3')
@@ -153,7 +163,7 @@
             let op2 = document.getElementById('op2')
             let op3 = document.getElementById('op3')
             if (guns.checked) {
-                res1.style.background = 'green'
+                res1.style.background = 'chartreuse'
                 op1.innerHTML = 'Correto!'
             }
             if (nirvana.checked) {
@@ -164,7 +174,56 @@
                 res3.style.background = 'red'
                 op3.innerHTML = 'Errado!'
             }
+        }
+
+        function verificar2() {
+            let charlie2 = document.getElementById('charlie2')
+            let nirvana2 = document.getElementById('nirvana2')
+            let pinkfloyd2 = document.getElementById('pinkfloyd2')
+            let res2_1 = document.getElementById('res2-1')
+            let res2_2 = document.getElementById('res2-2')
+            let res2_3 = document.getElementById('res2-3')
+            let op2_1 = document.getElementById('op2-1')
+            let op2_2 = document.getElementById('op2-2')
+            let op2_3 = document.getElementById('op2-3')
+            if (nirvana2.checked) {
+                res2_1.style.background = 'red'
+                op2_1.innerHTML = 'Errado!'
+            }
+            if (pinkfloyd2.checked) {
+                res2_2.style.background = 'red'
+                op2_2.innerHTML = 'Errado!'
+            }
             
+            if (charlie2.checked) {
+                res2_3.style.background = 'chartreuse'
+                op2_3.innerHTML = 'Correto!'
+            }
+        }
+
+        function verificar3() {
+            let orapa3 = document.getElementById('orapa3')
+            let nirvana3 = document.getElementById('nirvana3')
+            let pinkfloyd3 = document.getElementById('pinkfloyd3')
+            let res3_1 = document.getElementById('res3-1')
+            let res3_2 = document.getElementById('res3-2')
+            let res3_3 = document.getElementById('res3-3')
+            let op3_1 = document.getElementById('op3-1')
+            let op3_2 = document.getElementById('op3-2')
+            let op3_3 = document.getElementById('op3-3')
+            if (nirvana3.checked) {
+                res3_1.style.background = 'red'
+                op3_1.innerHTML = 'Errado!'
+            }
+            if (pinkfloyd3.checked) {
+                res3_2.style.background = 'red'
+                op3_2.innerHTML = 'Errado!'
+            }
+            
+            if (orapa3.checked) {
+                res3_3.style.background = 'chartreuse'
+                op3_3.innerHTML = 'Correto!'
+            }
         }
     </script>
 </body>
