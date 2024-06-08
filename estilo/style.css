@@ -5,6 +5,7 @@
 @media screen and (min-width: 375px) and (max-width: 768px) {
 
     main {
+        background-color: #88bebe;
         margin: auto;
     }
 
