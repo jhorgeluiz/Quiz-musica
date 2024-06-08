@@ -3,9 +3,11 @@
 /* ====================TELA PEQUENA==================== */
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
+    body {
+        background-color: #88bebe;
+    }
 
     main {
-        background-color: #88bebe;
         margin: auto;
     }
 
@@ -83,14 +85,10 @@
     }
     main {
         margin: auto;
-        
-        
     }
 
     .containergeral {
-        
         background-color: #a43de9;
-        /* position: relative; */
         border-radius: 20px;
         width: 500px;
         height: 280px;
@@ -124,7 +122,6 @@
     }
 
     section {
-        
         color: white;
         width: 100px;
         border-radius: 5px;
@@ -165,7 +162,6 @@
     }
 
     .containergeral {
-        
         background-color: #a43de9;
         position: relative;
         border-radius: 20px;
@@ -191,7 +187,6 @@
     }
 
     p {
-        
         margin: 5px;
     }
     .audios {
